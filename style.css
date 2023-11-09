@@ -1,0 +1,214 @@
+/* global selector */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  height: 150vh;
+}
+
+.selection {
+  z-index: 1000;
+  position: sticky;
+  top: 0px;
+  height: 40px;
+  width: 250px;
+  background: #eef1f6;
+  border-radius: 7px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  /* block ---> inline */
+  align-items: center;
+  /* y axis: center */
+  justify-content: space-evenly;
+  /* x axis: center */
+}
+
+.selection button {
+  height: 30px;
+  width: 100px;
+  display: block;
+  border-radius: 5px;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.selection button:hover {
+  background: white;
+}
+
+/* centering element: margin:auto */
+/* flex box: display */
+/* inline vs block */
+/* width specified to it | complete width */
+
+.card {
+  height: 400px;
+  width: 300px;
+  background: white;
+  border-radius: 13px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgb(199 199 199);
+  position: relative;
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.card1 {
+  transform: scale(1.1);
+  z-index: 100;
+}
+
+/* transform */
+.card .header {
+  height: 150px;
+  padding-right: 25px;
+  letter-spacing: 0px;
+  color: rgba(0 0 0 / 51%);
+  background-image: linear-gradient(
+    47deg,
+    white,
+    rgb(239, 255, 183),
+    rgb(196, 255, 188),
+    rgb(236, 255, 252)
+  );
+}
+
+.card1 .header {
+  background-image: linear-gradient(
+    47deg,
+    white,
+    rgb(253, 201, 255),
+    rgb(210, 255, 255),
+    rgb(237, 255, 255)
+  );
+}
+
+.position {
+  float: right;
+  font-size: 50px;
+}
+
+.card .profile {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px white solid;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  background: rgb(222, 222, 222) 000;
+  overflow: hidden;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+}
+
+/* relative vs absolute */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+  height: 250px;
+  padding: 18px;
+  padding-top: 50px;
+}
+
+.footer h2 {
+  color: rgb(80, 80, 80);
+}
+
+.footer h1 {
+  margin-top: 8px;
+  color: gray;
+  font-weight: 400;
+}
+
+.discord {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 45px;
+  width: 85%;
+  border-radius: 7px;
+  background: #948fe1;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.discord img {
+  height: 90%;
+}
+
+.discord h3 {
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+/* Tailwind */
+
+.bgimg {
+  position: absolute;
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 10px;
+}
+
+.bgimg h1 {
+  font-size: 120px;
+  text-align: center;
+  color: rgb(172, 172, 172);
+}
+
+.bgimg p {
+  font-size: 310px;
+  margin-top: 10px;
+  text-align: center;
+  color: rgb(211, 211, 211);
+}
+
+/* Table */
+table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  width: 90vw;
+  margin: 80px auto;
+  text-align: center;
+  row-gap: 10px;
+  transform: skew(-20deg);
+}
+
+tbody tr {
+  width: 90%;
+  border: 2px solid rgb(255, 170, 170);
+  height: 50px;
+  transform: skew(20deg);
+  margin-bottom: 10px;
+}
+
+tr,
+thead,
+tbody,
+table,
+td {
+  border-collapse: collapse;
+}
